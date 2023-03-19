@@ -1,21 +1,23 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ ** main - Entry point
+ **
+ ** Return: Always 0 (Success)
+ **/
 int main(void)
 {
-int intType;
-long int longType;
-long long int longgType;
-float floatType;
-char charType;
-/*printing sizes*/
-printf("Size of a char: %zu byte(s)\n", sizeof(charType));
-printf("Size of an int: %zu byte(s)\n", sizeof(intType));
-printf("Size of a long int: %zu byte(s)\n", sizeof(longType));
-printf("Size of a long long int: %zu byte(s)\n", sizeof(longgType));
-printf("Size of a float: %zu byte(s)\n", sizeof(floatType));
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n < 0)
+printf("%d is negative\n", n);
+else if (n > 0)
+printf("%d is positive\n", n);
+else if (n == 0)
+printf("%d is 0", n);
+/* your code goes there */
 return (0);
 }
+
