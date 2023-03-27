@@ -2,7 +2,7 @@
 
 /**
  ** _strlen -  Entry point
- ** @str: parameter one
+ ** @s: parameter one
  ** Return: Always 0 (Success)
  **/
 
