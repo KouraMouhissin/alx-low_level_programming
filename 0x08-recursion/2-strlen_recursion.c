@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen_recursion(char *s) - func to print rev string
+ * _strlen_recursion - func to print rev string
  * @s: given string
  * Return: an int/ the string lenght
  */
