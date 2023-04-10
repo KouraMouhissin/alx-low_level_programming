@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * _strchr - func name: memeory copy
- * @s: given string
- * @c: char for location
+ * _strncpy - func name
+ * @dest: given string
+ * @src: char for location
+ * @n: int
  * Return: NULL.
  */
-char *_strchr(char *s, char c)
+char *_strncpy(char *dest, char *src, int n)
 {
 }
