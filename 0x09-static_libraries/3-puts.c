@@ -1,12 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * _puts - func name
+ * @str: given string
+ * Return: NULL.
  */
-int main(void)
+
+void _puts(char *str)
 {
-char Mystr[] = "\"Programming is like building a multilingual puzzle";
-puts(Mystr); /*using puts to print my string*/
-return (0);
+	int i = 0;
+
+	while (str[i])
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
