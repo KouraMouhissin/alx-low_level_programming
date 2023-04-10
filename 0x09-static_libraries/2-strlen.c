@@ -4,6 +4,6 @@
  * @s: given string
  * Return: NULL.
  */
-char *_strlen(char *s)
+int _strlen(char *s)
 {
 }
