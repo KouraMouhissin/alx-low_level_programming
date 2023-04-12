@@ -1,15 +1,15 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup - returns a pointer to a newly allocated spac 
- * @str: given string 
- * Return: pointer 
+ * _strdup - returns a pointer to a newly allocated spac
+ * @str: given string
+ * Return: pointer
  */
 char *_strdup(char *str)
 {
 	char *out;
 	unsigned int i, j;
-	
+
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
