@@ -9,7 +9,7 @@
 
 void print_dog(struct dog *d)
 {
-	if (d)
+	if (d != NULL)
 	{
 		char *name = (*d).name;
 		float age = (*d).age;
