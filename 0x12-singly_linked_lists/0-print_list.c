@@ -22,7 +22,7 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		node_nbr += 1;
 	}
-	
+
 	printf("[%d] %s\n", h->len, h->str);
 	return (node_nbr);
 }
