@@ -12,6 +12,6 @@ main:			; program label
 	mov	rax,0		
 	call	printf	; appel de la fonction
 	pop	rbp
-	mov	rax,1		
+	mov	rax,0	
 	ret	; return
 
