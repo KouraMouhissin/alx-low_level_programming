@@ -9,8 +9,7 @@ void free_list(list_t *head)
 {
 	list_t *actu;
 
-	actu = head;
-	while (actu != NULL)
+	while ((actu = head) != NULL)
 	{
 		head = (*head).next;
 		free((*actu).str);
