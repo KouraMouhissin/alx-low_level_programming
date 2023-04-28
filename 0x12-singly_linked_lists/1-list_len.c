@@ -2,21 +2,20 @@
 /**
  * list_len - number of nodes
  * @h: pointer to the first node
- * Return: nodes nbr
+ * Return: nde_nbr
 */
 
 size_t list_len(const list_t *h)
 {
-	size_t node_nbr = 1;
+	size_t nde_nbr = 1;
 
+	/* pointer test*/
 	if (h == NULL)
 		return (0);
-
 	while (h->next != NULL)
 	{
 		h = h->next;
-		node_nbr++;
+		nde_nbr++;
 	}
-
-	return (node_nbr);
+	return (nde_nbr);
 }
