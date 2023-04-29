@@ -9,11 +9,12 @@ size_t listint_len(const listint_t *h)
 {
 	size_t nbr_nde = 0;
 
-	do {
+	while (h != NULL)
+	{
 		h = (*h).next;
 
 		nbr_nde++;
-	} while (h != NULL);
+	}
 
 	return (nbr_nde);
 }
