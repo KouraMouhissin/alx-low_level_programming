@@ -16,9 +16,6 @@ size_t print_listint(const listint_t *h)
 		nbr_nde++;
 	}
 
-	if (h == NULL)
-		return (0);
-
 	return (nbr_nde);
 }
 
