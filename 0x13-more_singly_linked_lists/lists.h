@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * struct listint_s - linked list
- * @i: an int
+ * struct listint_t - linked list
+ * @n: an int
  * @next: next node
  * Description: singly linked list node structure
 */
@@ -15,13 +15,6 @@ typedef struct listint_t
 	int n;
 	struct listint_t *next;
 } listint_t;
-
-/**
- * struct listint_s - linked list
- * @i: an int
- * @next: next node
- * Description: singly linked list node structure
-*/
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
