@@ -11,7 +11,8 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
+		putchar(0 + h->n);
+		putchar('\0');
 		h = h->next;
 		nbr_nde++;
 	}
