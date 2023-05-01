@@ -11,8 +11,25 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		putchar(48 + (*h).n);
-		putchar('\n');
+		int a, b, c, d;
+
+		a = (*h).n;
+
+		if (a < 10)
+		{
+			putchar(48 + (*h).n);
+			putchar('\n');
+		}
+		else if (a > 10 && a < 100)
+		{
+			b = a % 10;
+			c = a - b;
+			d = c / 10;
+			putchar(48 + d);
+			putchar(48 + b);
+			putchar('\n');
+		}
+
 		return (1 +  print_listint((*h).next));
 	}
 
