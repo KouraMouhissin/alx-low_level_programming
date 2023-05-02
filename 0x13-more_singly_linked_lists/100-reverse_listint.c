@@ -12,8 +12,8 @@ listint_t *reverse_listint(listint_t **head)
 
 	while (*head)
 	{
-		suiv = (*(*head)).suiv;
-		(*(*head)).suiv = prec;
+		suiv = (*(*head)).next;
+		(*(*head)).next = prec;
 		prec = *head;
 		*head = suiv;
 	}
