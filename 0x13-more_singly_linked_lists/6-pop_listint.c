@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * pop_listint - deletes
- * @head: a pointer to...
+ * @head: a pointer to
  * Return: 0
  */
 

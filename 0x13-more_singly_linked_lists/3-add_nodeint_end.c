@@ -25,11 +25,11 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = nnde;
 		return (nnde);
 	}
-	while (tmp->next)
+	while ((*tmp).next)
 	{
-		tmp = tmp->next;
+		tmp = (*tmp).next;
 	}
-	tmp->next = nnde;
+	(*tmp).next = nnde;
 
 	return (nnde);
 }
