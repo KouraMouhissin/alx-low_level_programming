@@ -1,2 +1,1 @@
-#0x00-hello_world
-Second part of my journey
+#0x00-hello_w0rld
