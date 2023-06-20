@@ -15,14 +15,14 @@ void print_dog(struct dog *d)
 		float age = (*d).age;
 		char *owner = (*d).owner;
 
-		if (name != NULL)
+		if (name)
 			printf("Name: %s\n", name);
 		else
 			printf("nil\n");
 
 		printf("Age: %f\n", age);
 
-		if (owner != NULL)
+		if (owner)
 			printf("Owner: %s\n", owner);
 		else
 			printf("nil\n");
