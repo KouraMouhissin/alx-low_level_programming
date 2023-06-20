@@ -8,23 +8,18 @@
  */
 
 void print_dog(struct dog *d)
-{
-	if (d)
+{	
+	if (d = NULL)
 	{
-		char *name = (*d).name;
-		float age = (*d).age;
-		char *owner = (*d).owner;
-
-		if (name)
-			printf("Name: %s\n", name);
+		if (!(*d).name)
+			printf("Name: (nil)\n");
 		else
-			printf("nil\n");
+			printf("Name: %s\n", (*d).name);
+		printf("Age: %f\n", (*d).age);
 
-		printf("Age: %f\n", age);
-
-		if (owner)
-			printf("Owner: %s\n", owner);
+		if (!((*d).owner))
+			printf("Owner: (nil)\n");
 		else
-			printf("nil\n");
+			printf("Owner: %s\n", (*d).owner);
 	}
 }
