@@ -1,30 +1,30 @@
 #include "3-calc.h"
-
 /**
- * get_op_func - selects the correct function to perform
- * the operation asked by the user.
- * @s: char operator.
- *
- * Return: pointer to the function that corresponds to the operator.
+ * get_op_func - choix de la fonction
+ * @s: operation en char
+ * Return: un pointer
  */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
-		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
+		{"-", op_sub},
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i = 0;
 
-	while (i < 10)
+	/*initialisation de l'iterator*/
+	int m = 0;
+
+	while (m <= 9)
 	{
-		if (s[0] == ops->op[i])
+		/*boocle si iterator est sup à 10*/
+		if (s[0] == ops->op[m])
 			break;
-		i++;
+		m++;
 	}
 
-	return (ops[i / 2].f);
+	return (ops[m / 2].f);
 }

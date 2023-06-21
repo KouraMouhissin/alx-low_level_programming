@@ -1,40 +1,42 @@
 #include "3-calc.h"
-
 /**
- * main - check the code for ALX students.
- * @argc: argument count.
- * @argv: argument vector.
- *
- * Return: Always 0.
+ * main - check code for main
+ * @argc: count argc
+ * @argv: array argv
+ * Return: 0 anytime
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
-	int (*operation)(int, int);
+	int e, f;
+	int (*calcul)(int, int);
+
+	if (argv[2][1])
+	{
+		/*Tableau des args*/
+		printf("Error\n");
+		exit(99);
+	}
 
 	if (argc != 4)
 	{
+		/*Si le nombre d'argument n'est pas 4*/
 		printf("Error\n");
 		exit(98);
 	}
 
-	if (argv[2][1])
+	calcul = get_op_func(argv[2]);
+
+	if (calcul == NULL)
 	{
+		/*Cas où operation == NULL*/
 		printf("Error\n");
 		exit(99);
 	}
 
-	operation = get_op_func(argv[2]);
+	e = atoi(argv[1]);
+	f = atoi(argv[3]);
+	
+	printf("%d\n", calcul(e, f));
 
-	if (operation == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
-	printf("%d\n", operation(a, b));
 	return (0);
 }
