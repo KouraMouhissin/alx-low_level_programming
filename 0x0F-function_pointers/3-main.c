@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
 	e = atoi(argv[1]);
 	f = atoi(argv[3]);
-	
+
 	printf("%d\n", calcul(e, f));
 
 	return (0);
