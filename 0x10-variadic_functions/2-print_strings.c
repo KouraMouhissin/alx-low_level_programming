@@ -17,7 +17,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (rec = 0; rec < n; rec++)
 	{
-		ch = va_arg(valist, char *);
+		/*Declaration de ch*/
+		ch = va_arg(lst, char *);
 
 		if (ch)
 			printf("%s", ch);
