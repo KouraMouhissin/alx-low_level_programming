@@ -12,7 +12,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(lst, n);
 
-	for (rec = 0; rec < n; i++)
+	for (rec = 0; rec < n; rec++)
 	{
 		/*Boocle pour laffichage ds nbres*/
 		printf("%d", va_arg(lst, int));
