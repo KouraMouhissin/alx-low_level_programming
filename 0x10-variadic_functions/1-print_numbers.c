@@ -16,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		/*Boocle pour laffichage ds nbres*/
 		printf("%d", va_arg(lst, int));
-		if (separator && rec < n-1)
+		if (separator && rec < n - 1)
 			printf("%s", separator);
 	}
 
