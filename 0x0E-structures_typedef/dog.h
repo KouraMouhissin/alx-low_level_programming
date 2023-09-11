@@ -7,12 +7,12 @@
 typedef struct dog dog_t;
 
 /**
- * struct dog - description dog
- * @name: point to dog name
+ * struct dog - une variable dog
+ * @name: point to dog name (the name)
  * @age: age in float
- * @owner: point to owner
+ * @owner: point to owner var
  *
- * Description: Longer description
+ * Description: Une desc ription longue
  */
 struct dog
 {
@@ -22,7 +22,7 @@ struct dog
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-dog_t *n_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner);
 
 
 #endif
