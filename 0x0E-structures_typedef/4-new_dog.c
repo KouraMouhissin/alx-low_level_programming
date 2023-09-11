@@ -9,7 +9,7 @@
  * Return: retourne la structure du dog
  */
 
-dog_t *n_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
     int a, k_nom, k_prop;
 	dog_t *kdog;
