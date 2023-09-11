@@ -12,7 +12,7 @@ void print_dog(struct dog *d)
 	if (d)
 	{
 		char *name = (*d).name;
-		float age = (*d).age;
+		float *age = (*d).age;
 		char *owner = (*d).owner;
 
 		if (name)
