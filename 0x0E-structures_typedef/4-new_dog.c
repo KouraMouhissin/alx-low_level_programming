@@ -11,7 +11,7 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    int a, k_nom, k_prop;
+	int a, k_nom, k_prop;
 	dog_t *kdog;
 
 	kdog = malloc(sizeof(*kdog));
@@ -31,24 +31,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (!((*kdog).name) || !((*kdog).owner))
 	{
-        free((*kdog).name);
+		free((*kdog).name);
 		free((*kdog).owner);
 		free(kdog);
 		return (NULL);
 	}
 
 	for (a = 0; a < k_nom; a++)
-	{
 		(*kdog).name[a] = name[a];
-	}
 	(*kdog).name[a] = '\0';
 
 	(*kdog).age = age;
 /*Boucle pour l'attribution u prop*/
 	for (a = 0; a < k_prop; a++)
-	{
 		(*kdog).owner[a] = owner[a];
-	}
 	(*kdog).owner[a] = '\0';
 
 	return (kdog);
