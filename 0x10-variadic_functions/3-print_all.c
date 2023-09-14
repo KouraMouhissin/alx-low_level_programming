@@ -27,9 +27,9 @@ void print_all(const char * const format, ...)
 			}
 			b++;
 		}
-		
+
 		/*Un switch case pour cifs*/
-		/*switch (format[a])
+		switch (format[a])
 		{
 		case 'c':
 			printf("%c", va_arg(vard_list, int)), c = 1;
@@ -50,39 +50,9 @@ void print_all(const char * const format, ...)
 			printf("%s", ch);
 			break;
 		}
-		Increementation de l'indice a*/
-		/*a++;*/
-
-		/*Un switch case pour cifs*/
-              
-                if (format[a] == 'c')
-		{
-                        printf("%c", va_arg(vard_list, int)), c = 1;
-                        break;
-		}
-		else if (format[a] == 'i')
-		{
-                        printf("%d", va_arg(vard_list, int)), c = 1;
-                        break;
-		}
-		else if (format[a] == 'f')
-		{
-                        printf("%f", va_arg(vard_list, double)), c = 1;
-                        break;
-		}
-		else if (format[a] == 's')
-		{
-                        ch = va_arg(vard_list, char *), c = 1;
-                        if (!ch)
-                        {
-                                printf("(nil)");
-                                break;
-                        }
-                        printf("%s", ch);
-                        break;
-                }
-
+		/*Increementation de l'indice a*/
 		a++;
 	}
+
 	printf("\n"), va_end(vard_list);
 }
