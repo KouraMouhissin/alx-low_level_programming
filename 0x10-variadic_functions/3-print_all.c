@@ -9,14 +9,11 @@ void print_all(const char * const format, ...)
 	char *ch;
 	va_list vard_list;
 	unsigned int a = 0, b, c = 0;
-
 	const char vch_argt[] = "cifs";
 
 	va_start(vard_list, format);
-
 	while (format && format[a])
 	{
-		/*Initialisation l'indice b*/
 		b = 0;
 		while (vch_argt[b])
 		{
@@ -24,12 +21,9 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			}
-			b++;
+			} b++;
 		}
-
-		/*Un switch case pour cifs*/
-		switch (format[a])
+		switch (format[a])/*switch case pour format*/
 		{
 		case 'c':
 			printf("%c", va_arg(vard_list, int)), c = 1;
@@ -46,13 +40,8 @@ void print_all(const char * const format, ...)
 			{
 				printf("(nil)");
 				break;
-			}
-			printf("%s", ch);
+			} printf("%s", ch);
 			break;
-		}
-		/*Increementation de l'indice a*/
-		a++;
-	}
-
-	printf("\n"), va_end(vard_list);
+		} a++;/*Incrtion indice a*/
+	} printf("\n"), va_end(vard_list);
 }
