@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 
 	va_start(vard_list, format);
 
-	while (format[a] && format)
+	while (format && format[a])
 	{
 		/*Initialisation l'indice b*/
 		b = 0;
