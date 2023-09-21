@@ -11,7 +11,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	size_t slen = 0;
 	list_t *nde_no;
-	
+
 	if (str == NULL)
 	{
 		slen = 0;
@@ -37,6 +37,6 @@ list_t *add_node(list_t **head, const char *str)
 	(*nde_no).str = strdup(str);
 	(*nde_no).len = slen;
 	*head = nde_no;
-	
+
 	return (*head);
 }
