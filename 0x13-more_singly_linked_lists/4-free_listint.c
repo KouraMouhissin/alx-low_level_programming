@@ -2,6 +2,7 @@
 /**
  * free_listint - linked list frees
  * @head: head
+ * return: nothing void function
  */
 
 void free_listint(listint_t *head)
